@@ -95,7 +95,7 @@ def typing_romaji():
                     print("Break key pressed. Returning...")
                     return
                 pyautogui.press(ch)
-                time.sleep(0.07)
+                time.sleep(0.1)
     finally:
         try:
             driver.switch_to.default_content()
