@@ -107,8 +107,8 @@ if __name__ == "__main__":
     driver.get('https://www.e-typing.ne.jp/roma/check/')
 
     # Prefer reading credentials from environment variables; fallback to hardcoded values if necessary
-    email = os.environ.get("ETYPING_EMAIL", "user name")
-    password = os.environ.get("ETYPING_PASSWORD", "password")
+    email = os.environ.get("ETYPING_EMAIL", "Hoang.DM235722@sis.hust.edu.vn")
+    password = os.environ.get("ETYPING_PASSWORD", "Hoangite6k6801")
 
     email_field = WAIT.until(EC.presence_of_element_located((By.ID, "mail")))
     email_field.send_keys(email)
